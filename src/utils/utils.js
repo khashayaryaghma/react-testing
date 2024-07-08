@@ -1,5 +1,5 @@
-const formatUserName = (name) => {
+export const formatUserName = (name) => {
   return "@" + name;
 };
 
-module.exports = formatUserName;
+// module.exports = formatUserName;

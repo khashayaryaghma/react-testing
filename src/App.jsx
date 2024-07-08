@@ -1,24 +1,11 @@
-// import "./App.css";
-// import UserTable from "./components/6-UserTable/UserTable";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <UserTable />
-//     </div>
-//   );
-// }
-
-// export default App;
-
 // ------------------------------------------------
 // 1
-// import "./App.css";
-// function App() {
-//   return <div className="App">hello world</div>;
-// }
+import "./App.css";
+function App() {
+  return <div className="App">hello world</div>;
+}
 
-// export default App;
+export default App;
 
 // ------------------------------------------------
 // 2
@@ -52,38 +39,38 @@
 
 // ----------------------------------------------------------------
 // 4
-import { useEffect, useState } from "react";
-import "./App.css";
-// import axios from "axios";
-function App() {
-  const [data, setData] = useState([]);
-  console.log(data);
-  useEffect(() => {
-    const fetchData = async () => {
-      // const res = await axios.get("https://jsonplaceholder.typicode.com/users");
-      const res = await fetch("https://jsonplaceholder.typicode.com/users");
-      const data = await res.json();
-      setData(data);
-    };
-    fetchData();
-  }, []);
+// import { useEffect, useState } from "react";
+// import "./App.css";
+// // import axios from "axios";
+// function App() {
+//   const [data, setData] = useState([]);
+//   console.log(data);
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       // const res = await axios.get("https://jsonplaceholder.typicode.com/users");
+//       const res = await fetch("https://jsonplaceholder.typicode.com/users");
+//       const data = await res.json();
+//       setData(data);
+//     };
+//     fetchData();
+//   }, []);
 
-  return (
-    <>
-      {data.length ? (
-        <ul data-testid="user-list">
-          {data.map((item, index) => {
-            return <p key={index}>{item.username}</p>;
-          })}
-        </ul>
-      ) : (
-        <p>loading...</p>
-      )}
-    </>
-  );
-}
+//   return (
+//     <>
+//       {data.length ? (
+//         <ul data-testid="user-list">
+//           {data.map((item, index) => {
+//             return <p key={index}>{item.username}</p>;
+//           })}
+//         </ul>
+//       ) : (
+//         <p>loading...</p>
+//       )}
+//     </>
+//   );
+// }
 
-export default App;
+// export default App;
 
 // -----------------------------------------------------------
 // 5
